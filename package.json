@@ -18,8 +18,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "yarn build:wasm && react-scripts start",
+    "build": "yarn build:wasm && react-scripts build",
     "build:wasm": "cd wasm-lib && wasm-pack build --target web --out-dir pkg",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
