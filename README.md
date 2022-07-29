@@ -28,4 +28,4 @@ yarn build:wasm
 
 ## License
 
-MIT © Richard McRichface
+MIT © kongchenglc
