@@ -20,8 +20,8 @@ pub fn draw(canvas_id: &str, power: i32) -> DrawResult<impl Fn((i32, i32)) -> Op
     chart.configure_mesh().x_labels(3).y_labels(3).draw()?;
 
     chart.draw_series(LineSeries::new(
-        (-50..=50)
-            .map(|x| x as f32 / 50.0)
+        (-20..=20)
+            .map(|x| x as f32 / 20.0)
             .map(|x| (x, x.powf(power as f32))),
         &RED,
     ))?;

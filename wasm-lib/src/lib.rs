@@ -6,16 +6,6 @@ mod func_plot;
 mod mandelbrot;
 mod plot3d;
 
-#[wasm_bindgen]
-pub fn add(a: i32, b: i32) -> i32 {
-    a + b
-}
-
-#[test]
-fn add_test() {
-    assert_eq!(1 + 1, add(1, 1));
-}
-
 #[global_allocator]
 static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
 
